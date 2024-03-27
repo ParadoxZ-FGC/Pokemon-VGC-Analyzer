@@ -1,2 +1,2 @@
-Pokemon,Set No.,Role,Item,Ability,Tera Type,HP,Atk,Def,SpA,SpD,Spe,Nature,Move 1,Move 2, Move 3, Move 4
-Incineroar (F),1,Support,Rocky Helmet,Intimidate,Grass,252,252,0,0,4,0,Adamant,Flare Blitz,Knock Off,Fake Out,Parting Shot
+Pokemon,Set No.,Role,Item,Ability,Tera Type,HP,Atk,Def,SpA,SpD,Spe,Nature,Move 1,Move 2,Move 3,Move 4,Counters
+Incineroar (F),1,Bulky Support,Rocky Helmet,Intimidate,Grass,252,252,0,0,4,0,Adamant,Flare Blitz,Knock Off,Fake Out,Parting Shot,Ogerpon
