@@ -3,7 +3,7 @@
 import requests  # library that allows reading web pages
 
 root_urls = ["https://victoryroadvgc.com/2024-season-calendar/", "https://www.smogon.com/dex/sv/formats/vgc24-regulation-f/"]
-
+events = ["https://victoryroadvgc.com/2024-charlotte/"]
 
 # Create request objects of Victory Road calander, write text to file
 vr_base = requests.get(root_urls[0])  # Victory Road 2024 Season Calendar page object
@@ -14,7 +14,7 @@ f.close()
 # Access VR events, find top 10 used Pokemon 
 # top_used = []
 # for line in vr_base.text:
-#
+# 
 # calculate pick rate
 
 # Write pick rate of top 10 Pokemon to pick-rates.csv, (maybe write top sets to )
