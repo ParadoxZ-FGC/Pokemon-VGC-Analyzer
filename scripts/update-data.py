@@ -11,7 +11,7 @@ f = open("../site-dumps/vr_calander_2024.txt", "w")
 f.write(vr_base.text)
 f.close()
 smogon_reg_base = requests.get(root_urls[1])  # Smogon current Regulation page object
-f = open("../site-dumps/vr_calander_2024.txt", "w")
+f = open("../site-dumps/smogon_reg-{}.txt".format(regulation), "w")
 f.write(vr_base.text)
 f.close()
 
@@ -19,6 +19,8 @@ f.close()
 
 
 # Write pick rate of top 10 Pokemon to pick-rates.csv, (maybe write top sets to )
-
+# f = open("../data/pick-rates.csv", "?")
+# f.write()
+# f.close()
 
 print(vr_base.text)
