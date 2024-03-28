@@ -5,13 +5,20 @@ import requests  # library that allows reading web pages
 regulation = "f"
 root_urls = ["https://victoryroadvgc.com/2024-season-calendar/", "https://www.smogon.com/dex/sv/formats/vgc24-regulation-{}/".format(regulation)]
 
-vr_base = requests.get(root_urls[0])          # Victory Road 2024 Season Calendar page object
+# Create request objects of root urls
+vr_base = requests.get(root_urls[0])  # Victory Road 2024 Season Calendar page object
+f = open("../site-dumps/vr_calander_2024.txt", "w")
+f.write(vr_base.text)
+f.close()
 smogon_reg_base = requests.get(root_urls[1])  # Smogon current Regulation page object
+f = open("../site-dumps/vr_calander_2024.txt", "w")
+f.write(vr_base.text)
+f.close()
 
-# search site(s)
+# Access VR events, find top 10 used Pokemon (and sets)
 
-# find top ? pokemon and sets
 
-# write pick rates (maybe sets) to file
+# Write pick rate of top 10 Pokemon to pick-rates.csv, (maybe write top sets to )
+
 
 print(vr_base.text)
