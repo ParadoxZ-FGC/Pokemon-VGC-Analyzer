@@ -1,4 +1,4 @@
-# Crawl sites : Gather top sets/pick rates
+# Scrape data from sites : Gather top sets/pick rates
 
 import requests  # library that allows reading web pages
 
