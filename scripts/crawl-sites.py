@@ -42,13 +42,14 @@ class Crawler:
             logging.info(f"Crawling: {url}")
             try:
                 self.crawl(url)
-                string = ""
-                for line in requests.get(url).text:
-                    if "2024 Season – VGC Regulation Set F" in line:
-                        string += url + "\n"
-                new_f = open("../site-dumps/reg_f_tourney_urls.txt", "a")
-                new_f.write(string)
-                new_f.close()
+                with open("current_page.txt", "w", encoding="utf-8") as current:
+                    current.write(requests.get(url).text)
+                current.close()
+                for line in open("current_page.txt", "r", encoding="utf-8").readlines():
+                    if "VGC Regulation Set F" in line:
+                        with open(r"site-dumps\reg-f_tourney_urls.txt", "a", encoding="utf-8") as regf_urls:
+                            regf_urls.write(url + "\n")
+                        regf_urls.close()
             except Exception:
                 logging.exception(f"Failed to crawl: {url}")
             finally:
@@ -56,6 +57,5 @@ class Crawler:
 
 
 if __name__ == "__main__":
-    urls = ["https://victoryroadvgc.com/2024-season-calendar/",
-            "https://www.smogon.com/dex/sv/formats/vgc24-regulation-f/"]
-    Crawler(urls=[urls[1]]).run()
+    urls = ["https://victoryroadvgc.com/2024-season-calendar/", "https://www.smogon.com/dex/sv/formats/vgc24-regulation-f/"]
+    Crawler(urls=["https://victoryroadvgc.com/2024-season-calendar/", "https://www.smogon.com/dex/sv/formats/vgc24-regulation-f/"]).run()
