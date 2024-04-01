@@ -1,4 +1,4 @@
-# Crawl resource sites : Prints out sub-links for other scripts to pull from
+# Crawl resource sites : Prints out sub-links for other scripts to pull from, writes urls associated with specified regulation to a .txt
 
 # pip install requests bs4
 import logging
@@ -42,12 +42,12 @@ class Crawler:
             logging.info(f"Crawling: {url}")
             try:
                 self.crawl(url)
-                with open("current_page.txt", "w", encoding="utf-8") as current:
+                with open("../data/site-dumps/current_crawl_page.txt", "w", encoding="utf-8") as current:
                     current.write(requests.get(url).text)
                 current.close()
-                for line in open("current_page.txt", "r", encoding="utf-8").readlines():
+                for line in open("../data/site-dumps/current_crawl_page.txt", "r", encoding="utf-8").readlines():
                     if "VGC Regulation Set F" in line:
-                        with open(r"site-dumps\reg-f_tourney_urls.txt", "a", encoding="utf-8") as regf_urls:
+                        with open("../data/site-dumps/reg-f_tourney_urls.txt", "a", encoding="utf-8") as regf_urls:
                             regf_urls.write(url + "\n")
                         regf_urls.close()
             except Exception:
