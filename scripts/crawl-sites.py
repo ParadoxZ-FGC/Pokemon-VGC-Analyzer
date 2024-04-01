@@ -46,7 +46,7 @@ class Crawler:
                 for line in requests.get(url).text:
                     if "2024 Season – VGC Regulation Set F" in line:
                         string += url + "\n"
-                new_f = open("reg_f_tourneys.txt", "a")
+                new_f = open("../site-dumps/reg_f_tourney_urls.txt", "a")
                 new_f.write(string)
                 new_f.close()
             except Exception:
@@ -56,5 +56,6 @@ class Crawler:
 
 
 if __name__ == "__main__":
-    Crawler(urls=["https://victoryroadvgc.com/2024-season-calendar/",
-                  "https://www.smogon.com/dex/sv/formats/vgc24-regulation-f/"]).run()
+    urls = ["https://victoryroadvgc.com/2024-season-calendar/",
+            "https://www.smogon.com/dex/sv/formats/vgc24-regulation-f/"]
+    Crawler(urls=[urls[1]]).run()
