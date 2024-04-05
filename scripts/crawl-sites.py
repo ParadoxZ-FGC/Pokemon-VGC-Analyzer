@@ -16,10 +16,10 @@ class Crawler:
         self.visited_urls = []
         self.urls_to_visit = urls
 
-    def download_url(self, url):
+    def download_url(self, url):    # Returns txt for specified URL
         return requests.get(url).text
 
-    def get_linked_urls(self, url, html):
+    def get_linked_urls(self, url, html):   # Scans current URL page for sublinks
         soup = BeautifulSoup(html, "html.parser")
         for link in soup.find_all("a"):
             path = link.get("href")
@@ -27,16 +27,16 @@ class Crawler:
                 path = urljoin(url, path)
             yield path
 
-    def add_url_to_visit(self, url):
+    def add_url_to_visit(self, url):    # Adds sublinks found on a URL to urls_to_vist
         if url not in self.visited_urls and url not in self.urls_to_visit:
             self.urls_to_visit.append(url)
 
-    def crawl(self, url):
+    def crawl(self, url):   # Crawls specified 
         html = self.download_url(url)
         for url in self.get_linked_urls(url, html):
             self.add_url_to_visit(url)
 
-    def run(self):
+    def run(self):  # Crawls specified URLs and sublinks until there are no more unvisited links
         while self.urls_to_visit:
             url = self.urls_to_visit.pop(0)
             logging.info(f"Crawling: {url}")
@@ -57,5 +57,5 @@ class Crawler:
 
 
 if __name__ == "__main__":
-    urls = ["https://victoryroadvgc.com/2024-season-calendar/", "https://www.smogon.com/dex/sv/formats/vgc24-regulation-f/"]
+    # urls = ["https://victoryroadvgc.com/2024-season-calendar/", "https://www.smogon.com/dex/sv/formats/vgc24-regulation-f/"]
     Crawler(urls=["https://victoryroadvgc.com/2024-season-calendar/", "https://www.smogon.com/dex/sv/formats/vgc24-regulation-f/"]).run()
