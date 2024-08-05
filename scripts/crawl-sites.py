@@ -43,12 +43,12 @@ class Crawler:
             logging.info(f"Crawling: {url}")
             try:
                 self.crawl(url)
-                with open("..data/site-dumps/current_crawl_page.txt", "w", encoding="utf-8") as current:
+                with open("../data/site-dumps/current_crawl_page.txt", "w", encoding="utf-8") as current:
                     current.write(requests.get(url).text)
                 current.close()
-                for line in open("..data/site-dumps/current_crawl_page.txt", "r", encoding="utf-8").readlines():
+                for line in open("../data/site-dumps/current_crawl_page.txt", "r", encoding="utf-8").readlines():
                     if f"VGC Regulation Set {reg}" in line:
-                        with open(f"..data/site-dumps/reg-{reg.lower()}_tourney_urls.txt", "a", encoding="utf-8") as reg_urls:
+                        with open(f"../data/site-dumps/reg-{reg.lower()}_tourney_urls.txt", "a", encoding="utf-8") as reg_urls:
                             reg_urls.write(url + "\n")
                         reg_urls.close()
             except Exception:
