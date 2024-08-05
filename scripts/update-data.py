@@ -44,7 +44,7 @@ for mon in top_used:
     percent_use[mon] = (top_used[mon] / no_teams) * 100
 print(f"Successfully: Calculated usage % of Pokemon in Regulation {reg}")
 
-with open(f"../data/reg-{reg.lower()}-pick-rates.csv", "w", encoding="utf-8") as pr:
+with open(f"../data/data-tables/reg-{reg.lower()}-pick-rates.csv", "w", encoding="utf-8") as pr:
     for mon in percent_use:
         pr.write(f"{mon},{'{:.1f}'.format(percent_use[mon])}%\n")
 pr.close()
@@ -104,7 +104,7 @@ for mon in top_mons_w_sets:
                                  natures, moves[0], moves[1], moves[2], moves[3], counters]
 print(f"Successfully: Found sets for top used Pokemon in Regulation {reg}")
 
-with open(f"../data/reg-{reg.lower()}-top-sets.csv", "w") as ts:
+with open(f"../data/data-tables/reg-{reg.lower()}-top-sets.csv", "w") as ts:
     for mon in top_mon_sets:
         ts.write(mon + ",")
         for data in top_mon_sets[mon]:
