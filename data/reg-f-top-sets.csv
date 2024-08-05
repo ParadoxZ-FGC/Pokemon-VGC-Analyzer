@@ -1,0 +1,40 @@
+Pokemon,Set No.,Role,Item,Ability,Tera Type,EVs,IVs,Nature,Move 1,Move 2,Move 3,Move 4,Counters
+Incineroar,1,Bulky Support,Safety Goggles/Sitrus Berry,Intimidate,Ghost/Grass/Fairy,252/4/140/0/76/36,252/20/156/0/44/36,Careful,Fake Out,Flare Blitz,Parting Shot,Knock Off,NA
+Amoonguss,1,Bulky Support,Sitrus Berry/Rocky Helmet,Regenerator,Water/Fairy,244/0/180/0/84/0,31/0/31/31/31/27,Bold,Spore,Rage Powder,Pollen Puff,Protect,NA
+Archaludon,1,Rain Sweeper,Assault Vest,Stamina,Grass/Fairy,252/0/28/36/164/28,248/0/252/0/8/0,Modest,Draco Meteor,Flash Cannon,Electro Shot,Body Press,NA
+Articuno,1,Specs Sweeper,Choice Specs,Snow Cloak,Ice,252/0/44/196/4/12,31/2/31/31/31/31,Modest,Blizzard,Ice Beam,Freeze-Dry,Sheer Cold,NA
+Baxcalibur,1,Clear Amulet,Clear Amulet,Thermal Exchange,Poison,220/196/4/0/36/52,0/252/0/0/4/252,Adamant,Glaive Rush,Ice Shard,Icicle Crash,Swords Dance,NA
+Cresselia,1,Trick Room Support,Safety Goggles,Levitate,Fairy/Poison,252/0/180/0/76/0,31/0/31/31/31/0,Sassy,Moonblast,Ice Beam,Psychic,Lunar Blessing,NA
+Dondozo,1,Offensive Sweeper,Rocky Helmet/Leftovers/Clear Amulet,Unaware,Grass,4/156/20/0/76/252,172/84/4/0/244/4,Adamant,Wave Crash,Order Up,Earthquake,Protect,NA
+Dragonite,1,Choice Band,Choice Band,Inner Focus,Normal,196/252/4/0/4/52,248/252/0/0/8/0,Adamant,Extreme Speed,Aerial Ace,Aqua Jet,Ice Spinner,NA
+Entei,1,Bulky Attacker,Assault Vest,Inner Focus,Grass/Normal,252/196/4/0/52/4,31/31/31/31/31/31,Adamant,Sacred Fire,Extreme Speed,Stomping Tantrum,Snarl,NA
+Farigiraf,1,Bulky Support,Sitrus Berry/Safety Goggles,Armor Tail,Fairy,244/0/132/76/52/4,31/0/31/31/31/31,Modest,Psychic,Psychic Noise,Dazzling Gleam,Trick Room,NA
+Flutter Mane,1,Offensive,Booster Energy/Fairy Feather,Protosynthesis,Fairy,116/0/76/116/4/196,31/0/31/31/31/31,Modest,Moonblast,Shadow Ball,Dazzling Gleam,Protect,NA
+Gallade,1,Trick Room Abuser,Clear Amulet,Sharpness,Grass/Fire,252/244/12/0/0/0,31/31/31/31/31/0,Brave,Psycho Cut,Sacred Sword,Wide Guard,Trick Room,NA
+Gholdengo,1,Nasty Plot,Leftovers/Metal Coat,Good as Gold,Fairy/Dragon/Steel,244/0/4/132/4/124,31/0/31/31/31/31,Modest,Make It Rain,Shadow Ball,Nasty Plot,Protect,NA
+Glimmora,1,Meteor Beam,Power Herb,Toxic Debris,Grass/Water,244/0/4/76/92/92,31/0/31/31/31/31,Modest,Meteor Beam,Sludge Bomb,Earth Power,Energy Ball,NA
+Gouging Fire,1,Offensive Support,Booster Energy,Protosynthesis,Grass/Fairy,252/4/20/0/68/164,0/228/28/0/0/252,Jolly,Heat Crash,Burning Bulwark,Breaking Swipe,Howl,NA
+Hatterene,1,Bulky Life Orb Attacker,Life Orb,Magic Bounce,Psychic/Fire,212/0/100/196/0/0,31/0/31/31/31/0,Quiet,Expanding Force,Dazzling Gleam,Trick Room,Protect,NA
+Heatran,1,Bulky Attacker,Leftovers/Life Orb,Flash Fire,Grass/Fairy,228/0/84/156/20/20,252/0/0/0/196/60,Modest,Heat Wave,Magma Storm,Flash Cannon,Earth Power,NA
+Iron Bundle,1,Glass Cannon,Booster Energy,Quark Drive,Ghost,4/0/0/252/0/252,31/0/31/31/31/31,Timid,Hydro Pump,Freeze-Dry,Icy Wind,Protect,NA
+Iron Crown,1,Booster Energy,Booster Energy,Quark Drive,Water,0/0/0/252/4/252,31/20/31/31/31/31,Timid/Modest,Tachyon Cutter,Expanding Force,Tera Blast,Focus Blast,NA
+Iron Hands,1,Bulky Attacker,Assault Vest,Quark Drive,Grass/Water/Fairy,4/156/4/0/252/92,0/140/0/0/172/196,Adamant,Fake Out,Drain Punch,Close Combat,Wild Charge,NA
+Iron Jugulis,1,Tailwind Support,Booster Energy,Quark Drive,Poison/Steel,188/0/52/12/4/252,31/0/31/31/31/31,Timid,Air Slash,Snarl,Tailwind,Protect,NA
+Kingambit,1,Offensive,Black Glasses/Safety Goggles,Defiant,Dragon/Fairy,244/252/4/0/4/4,252/116/4/0/20/116,Adamant,Sucker Punch,Kowtow Cleave,Protect,Swords Dance,NA
+Latias,1,Bulky Tailwind Setter,Rocky Helmet,Levitate,Poison,244/0/4/68/4/188,31/0/31/31/31/31,Timid,Mist Ball,Ice Beam,Tailwind,Recover,NA
+Metagross,1,Bulky Attacker,Assault Vest,Clear Body,Dragon/Steel,220/116/36/0/92/44,0/252/4/0/0/252,Adamant,Heavy Slam,Psychic Fangs,Bullet Punch,Stomping Tantrum,NA
+Pelipper,1,Rain Setter,Rocky Helmet/Focus Sash/Damp Rock,Drizzle,Steel/Flying/Ghost,252/0/76/4/140/36,31/0/31/31/31/31,Bold,Hurricane,Tailwind,Protect,Wide Guard,NA
+Porygon2,1,Bulky Disruption,Eviolite,Trace/Download,Poison/Ghost/Fairy/Flying,252/0/196/0/60/0,31/0/31/31/31/31,Bold,Tera Blast,Thunderbolt,Eerie Impulse,Ice Beam,NA
+Raging Bolt,1,Assault Vest,Assault Vest,Protosynthesis,Fairy,244/0/108/100/4/52,31/20/31/31/31/31,Modest,Thunderbolt,Electroweb,Volt Switch,Thunderclap,NA
+Regidrago,1,Dragon Fang,Dragon Fang,Dragon's Maw,Steel,4/0/0/252/0/252,31/0/31/31/31/31,Modest,Dragon Energy,Draco Meteor,Earth Power,Protect,NA
+Registeel,1,IronPress,Leftovers,Clear Body,Water/Fairy,252/52/76/0/124/4,31/31/31/31/31/31,Impish,Body Press,Heavy Slam,Iron Defense,Protect,NA
+Rillaboom,1,Offensive Pivot,Assault Vest,Grassy Surge,Grass/Fire,252/148/44/0/60/4,236/252/4/0/12/4,Adamant,Fake Out,Wood Hammer,Grassy Glide,U-turn,NA
+Roaring Moon,1,Dragon Dance Sweeper,Booster Energy,Protosynthesis,Flying,148/164/60/0/52/84,148/100/44/0/44/172,Adamant,Knock Off,Acrobatics,Dragon Dance,Protect,NA
+Scream Tail,1,Support,Booster Energy,Protosynthesis,Dark/Grass,228/0/148/4/28/100,31/0/31/31/31/31,Timid,Dazzling Gleam,Disable,Encore,Protect,NA
+Smeargle,1,Support,Focus Sash,Moody,Grass/Ghost,68/4/60/0/124/252,252/0/4/0/0/252,Jolly,Spore,Follow Me,Fake Out,Wide Guard,NA
+Sylveon,1,Set-up Sweeper,Throat Spray,Pixilate,Water/Fire,228/0/124/124/4/28,252/0/252/0/4/0,Modest,Hyper Voice,Misty Terrain,Tera Blast,Protect,NA
+Torkoal,1,Trick Room Sweeper,Charcoal,Drought,Fire,252/0/0/252/4/0,31/0/31/31/31/0,Quiet,Eruption,Heat Wave,Earth Power,Protect,NA
+Ursaluna,1,Guts Attacker,Flame Orb,Guts,Ghost/Poison,140/156/76/4/132/0,31/31/31/31/31/0,Brave,Facade,Headlong Rush,Swords Dance,Earthquake,NA
+Volcarona,1,Quiver Dance,Leftovers,Flame Body,Fairy/Dragon,252/0/68/36/12/140,31/0/31/31/31/31,Modest,Flamethrower,Tera Blast,Giga Drain,Quiver Dance,NA
+Walking Wake,1,Life Orb,Life Orb,Protosynthesis,Fire,116/0/28/164/4/196,31/0/31/31/31/31,Timid,Hydro Steam,Draco Meteor,Flamethrower,Protect,NA
+Whimsicott,1,Sun Setter,Covert Cloak,Prankster,Water,44/0/0/0/244/220,31/0/31/31/31/31,Timid,Moonblast,Beat Up,Tailwind,Sunny Day,NA

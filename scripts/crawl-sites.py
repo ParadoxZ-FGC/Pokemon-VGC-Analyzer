@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 
 logging.basicConfig(format="%(asctime)s %(levelname)s:%(message)s", level=logging.INFO)
 
+reg = "G"
 
 class Crawler:
     def __init__(self, urls=None):
@@ -42,14 +43,14 @@ class Crawler:
             logging.info(f"Crawling: {url}")
             try:
                 self.crawl(url)
-                with open("../data/site-dumps/current_crawl_page.txt", "w", encoding="utf-8") as current:
+                with open("..data/site-dumps/current_crawl_page.txt", "w", encoding="utf-8") as current:
                     current.write(requests.get(url).text)
                 current.close()
-                for line in open("../data/site-dumps/current_crawl_page.txt", "r", encoding="utf-8").readlines():
-                    if "VGC Regulation Set F" in line:
-                        with open("../data/site-dumps/reg-f_tourney_urls.txt", "a", encoding="utf-8") as regf_urls:
-                            regf_urls.write(url + "\n")
-                        regf_urls.close()
+                for line in open("..data/site-dumps/current_crawl_page.txt", "r", encoding="utf-8").readlines():
+                    if f"VGC Regulation Set {reg}" in line:
+                        with open(f"..data/site-dumps/reg-{reg.lower()}_tourney_urls.txt", "a", encoding="utf-8") as reg_urls:
+                            reg_urls.write(url + "\n")
+                        reg_urls.close()
             except Exception:
                 logging.exception(f"Failed to crawl: {url}")
             finally:
@@ -57,5 +58,4 @@ class Crawler:
 
 
 if __name__ == "__main__":
-    # urls = ["https://victoryroadvgc.com/2024-season-calendar/", "https://www.smogon.com/dex/sv/formats/vgc24-regulation-f/"]
-    Crawler(urls=["https://victoryroadvgc.com/2024-season-calendar/", "https://www.smogon.com/dex/sv/formats/vgc24-regulation-f/"]).run()
+    Crawler(urls=["https://victoryroadvgc.com/2024-season-calendar/", f"https://www.smogon.com/dex/sv/formats/vgc24-regulation-{reg.lower()}/"]).run()
