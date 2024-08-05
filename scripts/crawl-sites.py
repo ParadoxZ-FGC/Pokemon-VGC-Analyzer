@@ -9,6 +9,8 @@ from bs4 import BeautifulSoup
 logging.basicConfig(format="%(asctime)s %(levelname)s:%(message)s", level=logging.INFO)
 
 reg = "G"
+new = open(f"../data/site-dumps/reg-{reg.lower()}_tourney_urls.txt", "w", encoding="utf-8")
+new.close
 
 class Crawler:
     def __init__(self, urls=None):
