@@ -3,12 +3,12 @@
 import requests  # library that allows reading web pages
 import re
 
-root_urls = ["https://victoryroadvgc.com/2024-season-calendar/",
-             "https://www.smogon.com/dex/sv/formats/vgc24-regulation-f/"]
-events = ["https://victoryroadvgc.com/2024-charlotte/"]
 reg = "G"
+root_urls = ["https://victoryroadvgc.com/2024-season-calendar/",
+             f"https://www.smogon.com/dex/sv/formats/vgc24-regulation-{reg}/"]
+events = ["https://victoryroadvgc.com/2024-charlotte/"]
 
-# Create request objects of Victory Road calendar and Smogon Reg-F info page, write text to file
+# Create request objects of Victory Road calendar and Smogon Reg. info page, write text to file
 vr_base = requests.get(events[0])  # Victory Road 2024 Season Calendar page object
 with open("../data/site-dumps/vr_calendar_2024.txt", "w", encoding="utf-8") as vr:
     vr.write(vr_base.text)
